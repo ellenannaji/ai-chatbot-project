@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>AI Chatbot 🤖</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Markdown support (IMPORTANT for final upgrade) -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- HEADER -->
+    <div class="header">
+      <h1>AI Chatbot 🤖</h1>
+      <p>Ask me anything...</p>
+
+      <!-- 🌗 Theme Toggle -->
+      <button onclick="toggleTheme()" class="theme-btn">🌗 Theme</button>
+    </div>
+
+    <!-- CHAT BOX -->
+    <div id="chat-box" class="chat-box"></div>
+
+    <!-- INPUT AREA -->
+    <div class="input-area">
+
+      <input type="text" id="user-input" placeholder="Type your message..." />
+
+      <!-- 🎤 Voice Input -->
+      <button onclick="startVoice()">🎤</button>
+
+      <!-- ⛔ STOP BUTTON (IMPORTANT FINAL UPGRADE) -->
+      <button onclick="stopResponse()" class="stop-btn">⛔</button>
+
+      <!-- ➤ SEND BUTTON -->
+      <button onclick="sendMessage()">➤</button>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
